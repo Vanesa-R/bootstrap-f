@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title> Flexbox en Bootstrap</title>
+</head>
+<body>
+    <style>
+        .container-align{
+            height: 150px;
+        }
+    </style>
+    <div class="container">
+        <!--TIPOS DE FLEX BOX-->
+        <div class="row mt-3">
+            <div class="col">
+                <h4 class="mt-3">Tipos de display flex</h4>
+                <hr>
+                <div class="d-flex bg-primary text-white p-3"><p class="mb-0">Display Flex</p></div>
+                <div class="d-inline-flex bg-primary text-white p-3 mt-3"><p class="mb-0">Display Inline Flex</p></div>
+            </div>
+        </div>
+        <!--DIRECCIÓN DE LOS ELEMENTOS-->
+        <div class="row mt-3">
+            <div class="col">
+                <h4 class="mt-3">Dirección</h4>
+                <hr>
+                <p>Flex row</p>
+                <div class="d-flex flex-row bg-light text-white">
+                    <div class="bg-primary text-white p-3"><p class="mb-0">Caja 1</p></div>
+                    <div class="bg-primary text-white p-3"><p class="mb-0">Caja 2</p></div>
+                    <div class="bg-primary text-white p-3"><p class="mb-0">Caja 3</p></div>
+                </div>
+                <p class="mt-3">Flex row-reverse</p>
+                <div class="d-flex flex-row-reverse bg-light text-white">
+                    <div class="bg-primary text-white p-3"><p class="mb-0">Caja 1</p></div>
+                    <div class="bg-primary text-white p-3"><p class="mb-0">Caja 2</p></div>
+                    <div class="bg-primary text-white p-3"><p class="mb-0">Caja 3</p></div>
+                </div>
+                <p class="mt-3">Flex column</p>
+                <div class="d-flex flex-column bg-light text-white">
+                    <div class="bg-primary text-white p-3"><p class="mb-0">Caja 1</p></div>
+                    <div class="bg-primary text-white p-3"><p class="mb-0">Caja 2</p></div>
+                    <div class="bg-primary text-white p-3"><p class="mb-0">Caja 3</p></div>
+                </div>
+                <p class="mt-3">Flex column reverse</p>
+                <div class="d-flex flex-column-reverse bg-light text-white">
+                    <div class="bg-primary text-white p-3"><p class="mb-0">Caja 1</p></div>
+                    <div class="bg-primary text-white p-3"><p class="mb-0">Caja 2</p></div>
+                    <div class="bg-primary text-white p-3"><p class="mb-0">Caja 3</p></div>
+                </div>
+            </div>
+        </div>
+        <!--JUSTIFICAR CONTENIDO-->
+        <div class="row mt-3">
+            <div class="col">
+                <h4>Justify content</h4>
+                <hr>
+                <p>Start</p>
+                <div class="d-flex flex-row justify-content-start bg-light text-white">
+                    <div class="bg-primary text-white p-3"><p class="mb-0">Caja 1</p></div>
+                    <div class="bg-primary text-white p-3"><p class="mb-0">Caja 2</p></div>
+                    <div class="bg-primary text-white p-3"><p class="mb-0">Caja 3</p></div>
+                </div>
+                <p class="mt-3">Center</p>
+                <div class="d-flex flex-row justify-content-center bg-light text-white">
+                    <div class="bg-primary text-white p-3"><p class="mb-0">Caja 1</p></div>
+                    <div class="bg-primary text-white p-3"><p class="mb-0">Caja 2</p></div>
+                    <div class="bg-primary text-white p-3"><p class="mb-0">Caja 3</p></div>
+                </div>
+                <p class="mt-3">End</p>
+                <div class="d-flex flex-row justify-content-end bg-light text-white">
+                    <div class="bg-primary text-white p-3"><p class="mb-0">Caja 1</p></div>
+                    <div class="bg-primary text-white p-3"><p class="mb-0">Caja 2</p></div>
+                    <div class="bg-primary text-white p-3"><p class="mb-0">Caja 3</p></div>
+                </div>
+                <p class="mt-3">Space between</p>
+                <div class="d-flex flex-row justify-content-between bg-light text-white">
+                    <div class="bg-primary text-white p-3"><p class="mb-0">Caja 1</p></div>
+                    <div class="bg-primary text-white p-3"><p class="mb-0">Caja 2</p></div>
+                    <div class="bg-primary text-white p-3"><p class="mb-0">Caja 3</p></div>
+                </div>
+                <p class="mt-3">Space around</p>
+                <div class="d-flex flex-row justify-content-around bg-light text-white">
+                    <div class="bg-primary text-white p-3"><p class="mb-0">Caja 1</p></div>
+                    <div class="bg-primary text-white p-3"><p class="mb-0">Caja 2</p></div>
+                    <div class="bg-primary text-white p-3"><p class="mb-0">Caja 3</p></div>
+                </div>
+            </div>
+        </div>
+        <!--ALINEAR ELEMENTOS-->
+        <div class="row mt-3">
+            <div class="col">
+                <h4 class="mt-3">Align items</h4>
+                <hr>
+                <p class="mt-3">Start</p>
+                <div class="d-flex flex-row align-items-start bg-light text-white container-align">
+                    <div class="bg-primary text-white p-3"><p class="mb-0">Caja 1</p></div>
+                    <div class="bg-primary text-white p-3"><p class="mb-0">Caja 2</p></div>
+                    <div class="bg-primary text-white p-3"><p class="mb-0">Caja 3</p></div>
+                </div>
+                <p class="mt-3">Center</p>
+                <div class="d-flex flex-row align-items-center bg-light text-white container-align">
+                    <div class="bg-primary text-white p-3"><p class="mb-0">Caja 1</p></div>
+                    <div class="bg-primary text-white p-3"><p class="mb-0">Caja 2</p></div>
+                    <div class="bg-primary text-white p-3"><p class="mb-0">Caja 3</p></div>
+                </div>
+                <p class="mt-3">End</p>
+                <div class="d-flex flex-row align-items-end bg-light text-white container-align">
+                    <div class="bg-primary text-white p-3"><p class="mb-0">Caja 1</p></div>
+                    <div class="bg-primary text-white p-3"><p class="mb-0">Caja 2</p></div>
+                    <div class="bg-primary text-white p-3"><p class="mb-0">Caja 3</p></div>
+                </div>
+                <p class="mt-3">Baseline</p>
+                <div class="d-flex flex-row align-items-baseline bg-light text-white container-align">
+                    <div class="bg-primary text-white p-3"><p class="mb-0">Caja 1</p></div>
+                    <div class="bg-primary text-white p-3 align-self-center"><p class="mb-0">Caja 2</p></div>
+                    <div class="bg-primary text-white p-3"><p class="mb-0">Caja 3</p></div>
+                </div>
+                <p class="mt-3">Stretch</p>
+                <div class="d-flex flex-row align-items-stretch bg-light text-white container-align">
+                    <div class="bg-primary text-white p-3"><p class="mb-0">Caja 1</p></div>
+                    <div class="bg-primary text-white p-3"><p class="mb-0">Caja 2</p></div>
+                    <div class="bg-primary text-white p-3"><p class="mb-0">Caja 3</p></div>
+                </div>
+                <!--Con align self podremos alinear un elemento de manera exclusiva-->
+            </div>
+
+        </div>
+        <!--Otras clases-->
+        <div class="row mt-3">
+            <div class="col">
+                <h4 class="mt-3">Wrap</h4>
+                <hr>
+                <div class="d-flex flex-row flex-wrap  bg-light text-white">
+                    <div class="bg-primary text-white p-3"><p class="mb-0">Caja 1</p></div>
+                    <div class="bg-primary text-white p-3"><p class="mb-0">Caja 2</p></div>
+                    <div class="bg-primary text-white p-3"><p class="mb-0">Caja 3</p></div>
+                    <div class="bg-primary text-white p-3"><p class="mb-0">Caja 4</p></div>
+                    <div class="bg-primary text-white p-3"><p class="mb-0">Caja 5</p></div>
+                    <div class="bg-primary text-white p-3"><p class="mb-0">Caja 6</p></div>
+                    <div class="bg-primary text-white p-3"><p class="mb-0">Caja 7</p></div>
+                    <div class="bg-primary text-white p-3"><p class="mb-0">Caja 8</p></div>
+                    <div class="bg-primary text-white p-3"><p class="mb-0">Caja 9</p></div>
+                    <div class="bg-primary text-white p-3"><p class="mb-0">Caja 10</p></div>
+                    <div class="bg-primary text-white p-3"><p class="mb-0">Caja 11</p></div>
+                    <div class="bg-primary text-white p-3"><p class="mb-0">Caja 12</p></div>
+                    <div class="bg-primary text-white p-3"><p class="mb-0">Caja 13</p></div>
+                    <div class="bg-primary text-white p-3"><p class="mb-0">Caja 14</p></div>
+                    <div class="bg-primary text-white p-3"><p class="mb-0">Caja 15</p></div>
+                    <div class="bg-primary text-white p-3"><p class="mb-0">Caja 16</p></div>
+                    <div class="bg-primary text-white p-3"><p class="mb-0">Caja 17</p></div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col">
+                <h4 class="mt-3">Order</h4>
+                <hr>
+                <div class="d-flex flex-row  bg-light text-white">
+                    <div class="bg-primary text-white p-3 order-4"><p class="mb-0">Caja 1</p></div>
+                    <div class="bg-primary text-white p-3"><p class="mb-0">Caja 2</p></div>
+                    <div class="bg-primary text-white p-3"><p class="mb-0">Caja 3</p></div>
+                    <div class="bg-primary text-white p-3"><p class="mb-0">Caja 4</p></div>
+                    <div class="bg-primary text-white p-3"><p class="mb-0">Caja 5</p></div>
+                    <div class="bg-primary text-white p-3"><p class="mb-0">Caja 6</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
