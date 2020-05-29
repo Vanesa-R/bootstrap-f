@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     <link rel="stylesheet" href="estilos.css" type="text/css">
+    <title>Componente ScrollSpy</title>
+</head>
+<body>
+    <div class="container">
+        <h4 class="mt-5text-primary">Componente ScrollSpy</h4>
+        <p class="mt-3">Permite actualizar el elemento activo de otros componentes.</p>
+        <p>Ejemplo:</p>
+        <div class="row">
+                <div class="col-md-3">
+                    <ul class="list-group" id="navegacion">
+                        <li class="list-group-item active" data-target="#bio">Biografía</li>
+                        <li class="list-group-item" data-target="#ob">Obra</li>
+                        <li class="list-group-item" data-target="#prem">Premios</li>
+                    </ul>
+                </div>
+                <div class="col-md-6 miscroll" data-spy="scroll" data-target="#navegacion"> <!--añadimos data-spy y data-target con el ancla id de la lista-->
+                    <h5 id="bio active">Biografía</h5>
+                    <p> Gran parte de sus muchas historias cortas y obras menores fueron publicadas en las revistas pulp de la época;​ fue en una de ellas donde apareció Beyond Lies the Wub, su primera venta profesional.​ Aclamado en vida por contemporáneos como Robert A. Heinlein o Stanisław Lem, pasó la mayor parte de su carrera casi en la pobreza y obtuvo poco reconocimiento antes de morir. Tras su muerte, las adaptaciones en la gran pantalla de varias de sus novelas, comenzando por la versión libre de «¿Sueñan los androides con ovejas eléctricas?» en la película «Blade Runner», le dieron a conocer al gran público.</p>
+                    <h5 id="ob">Obra</h5>
+                    <ul>
+                        <li>El hombre en el castillo</li>
+                        <li>Tiempo de Marte</li>
+                        <li>Los tres estigmas de Palmer Eldritch</li>
+                        <li>¿Sueñan los androides con ovejas eléctricas?</li>
+                        <li>Gestarescala</li>
+                        <li>Ubik</li>
+                        <li>Fluyan mis lágrimas, dijo el policía</li>
+                        <li>Una mirada a la oscuridad</li>
+                        <li>Valis</li>
+                        <li>Exégesis</li>
+                        <li>Tiempo desarticulado</li>
+                        <li>…</li>
+                    </ul> 
+                    <h5 id="prem">Premios</h5>
+                    <ul>
+                        <li>Premio Hugo de novela por «El hombre en el castillo» (1963)</li>
+                        <li>Premio John W. Campbell Memorial por «Fluyan mis lágrimas, dijo el policía» (1974)</li>
+                        <li>Premio Británico de Ciencia Ficción por «Una mirada a la oscuridad» (1978)</li>
+                        <li>Premio Kurd Lasswitz por «Valis» (1985)</li>
+                        <li>Premio Gigamesh de novela por «La transmigración de Timothy Archer» (1985)</li>
+                        <li>Premio Gigamesh de novela por «Aguardando el año pasado» (1989)</li>
+                        <li>Premio Gigamesh de antología por «Aquí yace el Wub» (1990)</li>
+                        <li>Premio Gigamesh de antología por «El padre cosa» (1993)</li>
+                    </ul>
+                </div> 
+        </div>
+    </div>
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+   
+</body>
+</html>

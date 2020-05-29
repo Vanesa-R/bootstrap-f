@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     <link rel="stylesheet" href="estilos.css" type="text/css">
+    <title>Componente Modal</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h4 class="mt-5 text-primary">Componente Modal</h4>
+                <p class="mt-3">Permite mostrar cuadros de diálogo posicionándose sobre el resto de elementos (oscureciendo y deshabilitando nuestra página web). El componente trabaja con JavaScript, no olvides su script.</p>
+                <p>Ejemplo:</p>
+                <!--Ventana modal-->
+                <button class="btn btn-light" data-toggle="modal" data-target="#ventanaModal">Mostrar</button>
+
+                <div class="modal fade" id="ventanaModal" aria-hidden="true" role="dialog">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Fragmento de «The Eyes Have It» de Philip K. Dick</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><!--para añadir un botón para cerrar la ventana modal-->
+                            </div>
+                            <div class="modal-body">
+                                <p>It was quite by accident I discovered this incredible invasion of Earth by lifeforms from another planet. As yet, I haven’t done anything about it; I can’t think of anything to do. I wrote to the Government, and they sent back a pamphlet on the repair and maintenance of frame houses. Anyhow, the whole thing is known; I’m not the first to discover it. Maybe it’s even under control.</p>
+                            </div>
+                        <div class="modal-footer"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     <link rel="stylesheet" href="estilos.css" type="text/css">
+    <title>Componente List-Group</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <h4 class="mt-5 text-primary">Componente List-Group</h4>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <p class="mt-3">Ejemplo:</p>
+                    <ul class="list-group"><!--list-group-flush elimina los bordes-->
+                        <li class="list-group-item">Vestibulum malesuada fringilla ipsum.</li><!--para dar color tenemos que usar list-group-item-X no bg-X-->
+                        <li class="list-group-item">Aliquam porta interdum lacinia.</li>
+                        <li class="list-group-item">Quisque ultricies tempor maximus.</li>
+                    </ul>
+            </div>
+            <div class="col-6">
+                <p class="mt-3">Ejemplo con efecto:</p>
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action">Vestibulum malesuada fringilla ipsum.</a>
+                    <!--para dar efecto cuando pasamos por las acciones añadimos list-group-item-action-->
+                    <a href="#" class="list-group-item list-group-item-action">Aliquam porta interdum lacinia.</a>
+                    <a href="#" class="list-group-item list-group-item-action">Quisque ultricies tempor maximus.</a>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-2">
+                <div class="list-group">
+                    <a href="#e1" class="list-group-item list-group-item-action active" data-toggle="list">Lorem</a>
+                    <a href="#e2" class="list-group-item list-group-item-action" data-toggle="list">Dos</a>
+                    <a href="#e3" class="list-group-item list-group-item-action" data-toggle="list">Tres</a>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="e1">                            
+                        <h6>Vestibulum malesuada fringilla ipsum</h6>
+                        <p>Cras sit amet metus sed leo iaculis consequat. Donec nec mauris est. Cras nisi ligula, semper eget pharetra sed, laoreet sit amet arcu. Curabitur sed aliquam justo. Morbi id condimentum mauris. Aliquam accumsan dignissim nibh vel venenatis. Cras varius tempor magna non bibendum. Cras ante leo, blandit quis vehicula sed, cursus euismod diam. Proin et risus id dolor fringilla elementum. Pellentesque ut lacinia sem, sed ultrices ex.</p>
+                    </div>
+                    <div class="tab-pane fade" id="e2">
+                        <h6>Aliquam porta interdum lacinia</h6>
+                        <p>Donec commodo cursus tortor in feugiat. Proin interdum, metus id facilisis tincidunt, ligula massa suscipit nulla, ac vehicula risus lectus eget erat. Vestibulum sed viverra felis. Cras dictum id orci sed tincidunt. Donec sollicitudin dapibus iaculis. Nulla ornare diam diam, hendrerit lacinia quam convallis in. Proin libero nibh, sodales sed quam eu, tincidunt tristique justo. Curabitur lacus dolor, rhoncus at purus ac, rutrum facilisis augue. Etiam non gravida neque, nec ullamcorper justo.</p>
+                    </div>
+                    <div class="tab-pane fade" id="e3">
+                        <h6>Quisque ultricies tempor maximus</h6>
+                        <p>Nullam ut erat at dui faucibus consequat in sit amet augue. Suspendisse vehicula molestie nisl, eu mollis odio aliquet et. Etiam tempus hendrerit libero, id consequat elit vulputate ac. Aliquam rutrum elit a justo pellentesque fringilla. Nam non rutrum nulla. Fusce fringilla risus lorem, eu bibendum felis ultrices ut. Vestibulum cursus, elit id tempus porttitor, massa lorem iaculis ex, vitae iaculis elit purus id risus. Phasellus quis fermentum lacus.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
