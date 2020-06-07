@@ -1,0 +1,47 @@
+body {
+    margin: 20px auto;
+    width: 80%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+}
+h1 {
+    font-size: 1.6em;
+    margin-bottom: 2em;
+}
+h2 {
+    font-size: 1.2em;
+    margin-bottom: 2em;
+}
+h3 {
+    font-size: 1em;
+    margin-left: 1em;
+}
+h4 {
+    font-size: 0.9em;
+    text-decoration-line: underline;
+    margin-top: 1.6em;
+}
+code {
+    background-color: rgb(204, 253, 237);
+    border: 1px solid rgb(156, 211, 211);
+    padding: 0.2em;
+    margin-right: 1em;
+    margin-left: 1em;
+}
+.comentario {
+    font-size: 0.9em;
+    font-style: italic;
+    color: grey;
+}
+.resaltar {
+    font-weight: 550;
+}
+
+li {
+    list-style: square;
+    margin-bottom: 2em;
+}
+.miscroll {
+    height: 200px;
+    overflow: auto;
+}
