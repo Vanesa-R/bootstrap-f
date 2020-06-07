@@ -1,0 +1,40 @@
+/*Sección de contacto*/
+footer {
+    .contacto {
+        background-color: $grey;
+        margin: 0 auto;
+        color: $white;
+        h3 {
+            margin: 3% 0;
+            font-weight: 400;
+        }
+    }
+    .logo {
+        padding: 7% 2%;
+    }
+}
+/*Sección de redes sociales*/
+footer {
+   .enlaces {
+        text-align: center;
+        a {
+            color: $grey;
+            transition: ease 300ms all;
+            &.facebook {
+                &:hover {
+                    color: $facebook;
+                }
+            }
+            &.twitter {
+                &:hover {
+                    color: $twitter;
+                }
+            }
+            &.youtube {
+                &:hover {
+                    color: $youtube;
+                }
+            }
+        }
+    }
+}

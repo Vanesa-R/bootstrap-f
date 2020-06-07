@@ -1,0 +1,2 @@
+Página para startup realizada con Bootstrap para utilizar su sistema de rejilla para la maquetación. Y Sass para dar estilos CSS.
+Automatización de tareas con Gulp (compilar Sass, minimizar CSS y HTML, optimizar imágenes, documentar con SassDoc). 
